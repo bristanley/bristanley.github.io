@@ -1,0 +1,11 @@
+header {
+	font-weight: bold;
+}
+
+#main-header {
+	height: 80px;
+}
+
+#header-name {
+	font-size: 40px;
+}
