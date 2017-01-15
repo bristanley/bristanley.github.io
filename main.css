@@ -17,7 +17,6 @@ header {
 #headerName {
 	font-family: 'Cinzel',serif;
 	font-size: 50px;
-	text-decoration: underline;
 	color: red;
 }
  #welcome {
@@ -37,7 +36,7 @@ header {
  	margin: 10px 10px 0px 0px;
  }
 .mainLayout {
-    height: 575px;
+    height: 50vw;
     padding: 40px 48px!important;
     padding-top: 40px;
     padding-right: 48px;
@@ -45,8 +44,20 @@ header {
     padding-left: 48px;
 	background-color: navy;
 }
-#aboutSections {
+#sideBar {
 	position: relative;
 	background-color: green;
-
+	width: 275px;
+    height: 950px;
+    float: right;
+}
+#sideBarAbout {
+	position: relative;
+	background-color: #2196F3;
+	height: 900px;
+    float: right;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
