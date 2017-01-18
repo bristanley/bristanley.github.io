@@ -18,17 +18,24 @@ header {
 	font-size: 40px;
 	letter-spacing: 0.5px;
 	color: white;
+	float: left;
 }
 #navBar {
 	color: white
 }
-.header-links li {
-	display: inline-block;
-}
-#header-link {
+#header-links li {
 	float: left;
+	padding: 20px;
+}
+.header-link li a {
+	display: block;
+}
+.header-link{
+	font-size: 25px;
+}
+#header-links {
 	display: inline;
-	
+	list-style: none;
 }
 
  #welcome {
