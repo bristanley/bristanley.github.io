@@ -10,12 +10,12 @@ header {
 
 #mainHeader {
 	height: 80px;
-	background-color: #b92e2e;
+	background-color: #545454;
 }
 
 #headerName {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 40px;
+	font-size: 35px;
 	letter-spacing: 0.5px;
 	color: white;
 	float: left;
@@ -30,8 +30,17 @@ header {
 .header-link li a {
 	display: block;
 }
-.header-link{
+.header-link {
 	font-size: 25px;
+	color:black;
+
+	&: hover {
+		color: white;
+	}
+}
+#separate {
+	float: left;
+	font-size: 50px;
 }
 #header-links {
 	display: inline;
@@ -65,13 +74,13 @@ header {
 	position: relative;
 	background-color: #2a3035;
 	width: 275px;
-    height: 800px;
+    height: 605px;
     float: right;
 }
 #sideBarAbout {
 	position: relative;
 	background-color: #2a3035;
-	height: 770px;
+	height: 60px;
     float: right;
     margin-right: 10%;
     margin-left: 15%;
@@ -99,5 +108,11 @@ header {
 	font-size: 15px;
 	color: white;
 }
+
+#mainPhoto {
+	height: 600px;
+	width: 75%;
+	float: left;
+} 
 
 /*buttonStuff*/
