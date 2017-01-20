@@ -42,6 +42,11 @@ header {
  	background-color: 545454;
  }
 
+ #socials {
+ 	float: right;
+ 	margin: 0px 5px 0px 5px;
+ }
+
  .searchField {
  	float: right;
  	padding: 5px;
