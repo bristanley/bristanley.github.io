@@ -39,6 +39,7 @@ hr {
 .brand,
 .address-bar {
     display: none;
+    color: black;
 }
 
 .navbar-brand {
