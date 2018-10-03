@@ -12,4 +12,8 @@ export class LandingPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  goToPhoto() {
+    alert('stuff');
+  }
+
 }
