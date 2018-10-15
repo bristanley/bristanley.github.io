@@ -1,25 +1,30 @@
 <div class="main-container">
   <div class="title-container">
-    <h2>Would you like to see Brian the: </h2>
+    <h2>Which Brian do you want to see?</h2>
   </div>
-  <div class="button-container">
-    <div>
-      <div class="photo-button-container">
-        <button mat-button class="photoButton" disabled="true">Photographer</button>
-        <button mat-button class="photoButton" disabled="true">Photographer</button>
-        <button mat-button class="photoButton" (click)="goToPhoto()">Photographer</button>
+  <div class="content-container">
+    <div class="box">
+      <div class="icon">
+        <mat-icon class="fa fa-photo cursor" (click)="goToPhoto()">photo_camera</mat-icon>
+      </div>
+      <div class="content">
+        <h3>Photographer</h3>
+        <p>Landscape Photography has been a passion of mine since I started takeing
+          for fun and later. I hope you enjoy the moments I was able to capture in Photograph
+          as much as I enjoyed taking them.
+        </p>
       </div>
     </div>
-    <div>
-      <div class="or-container">
-        <h2>Or</h2>
+    <div class="box">
+      <div class="icon">
+        <mat-icon class="fa fa-dev cursor">computer</mat-icon>
       </div>
-    </div>
-    <div>
-      <div class="dev-button-container">
-        <button mat-button class="devButton" disabled="true">Developer</button>
-        <button mat-button class="devButton" disabled="true">Developer</button>
-        <button mat-button class="devButton" (click)="goToPhoto()">Developer</button>
+      <div class="content">
+        <h3>Frontend Developer</h3>
+        <p>Web developement is an interest that I developed later in life but quickly became
+          a passion that I have pursued and made a career out of. I have focused my developement
+          in the Angular Framework with design library experience in Angular Material.
+        </p>
       </div>
     </div>
   </div>

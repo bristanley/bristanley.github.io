@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: center;
 }
+.cursor {
+  cursor: pointer;
+}
 
 .title-container {
   display: flex;
@@ -15,51 +18,87 @@
   justify-content: center;
 }
 
-.button-container {
-  display: flex;
-  justify-content: space-around;
-  width: 20%;
+.content-container {
+  position: relative;
+  width: 800px;
+  height: 300px;
 }
 
-button {
-  background-color: black;
-  color: whitesmoke;
-  border-radius: 5px;
+.content-container .box {
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: aqua;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
 }
-
-.photo-button-container button {
+.content-container .box .icon{
   position: absolute;
-  width: 120px;
-  transition: 3s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: 0.5s;
+  z-index: 1;
 }
-.photo-button-container:hover button:nth-child(3) {
-  transform: translate(15px, -15px);
+.content-container .box:hover .icon {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.content-container .box .icon .fa {
+  position: absolute;
+  top: 40%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: .5s;
+  color: white;
+}
+.content-container .box:hover .icon .fa {
+  font-size: 40px;
+}
+.content-container .box .content {
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .5s;
+  opacity: 0;
+}
+.content-container .box:hover .content {
+  top: 100px;
   opacity: 1;
 }
-.photo-button-container:hover button:nth-child(2) {
-  transform: translate(10px, -10px);
-  opacity: .6;
+.content-container .box .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: white;
+  font-size: 24px;
 }
-.photo-button-container:hover button:nth-child(1) {
-  transform: translate(5px, -5px);
-  opacity: .4;
+.content-container .box .content p {
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
-
-.dev-button-container button {
-  position: absolute;
-  width: 120px;
-  transition: 3s;
+.content-container .box:nth-child(1) .icon {
+  background: #319635;
 }
-.dev-button-container:hover button:nth-child(3) {
-  transform: translate(15px, -15px);
-  opacity: 1;
+.content-container .box:nth-child(1) {
+  background: #4caf50;
 }
-.dev-button-container:hover button:nth-child(2) {
-  transform: translate(10px, -10px);
-  opacity: .6;
+.content-container .box:nth-child(2) .icon {
+  background: #23798e;
 }
-.dev-button-container:hover button:nth-child(1) {
-  transform: translate(5px, -5px);
-  opacity: .4;
+.content-container .box:nth-child(2) {
+  background: #328fa5;
 }

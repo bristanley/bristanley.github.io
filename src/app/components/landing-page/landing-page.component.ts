@@ -7,13 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
+  photoWebSiteUrl = 'https://brianstanley.me/';
+
   constructor() { }
 
   ngOnInit() {
   }
 
   goToPhoto() {
-    alert('stuff');
+    window.open(this.photoWebSiteUrl);
   }
 
 }
