@@ -9,11 +9,13 @@ import {
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ContentSliderComponent } from './components/content-slider/content-slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ContentSliderComponent
   ],
   imports: [
     BrowserModule,
