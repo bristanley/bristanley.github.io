@@ -13,15 +13,24 @@
 }
 
 .title-container {
+  width: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.55); 
+  border-radius: 10px 10px 0 0; 
+  h1 {
+    color: white;
+    font:"Roboto" sans-serif;
+  }
 }
 
 .content-container {
   position: relative;
   width: 800px;
   height: 300px;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 0 0 10px 10px; 
 }
 
 .content-container .box {
