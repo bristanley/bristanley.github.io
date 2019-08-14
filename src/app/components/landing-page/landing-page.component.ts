@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  photoWebSiteUrl = 'https://brianstanley.me/';
+  photoWebSiteUrl = 'http://brianstanley.myportfolio.com';
 
   constructor() { }
 
