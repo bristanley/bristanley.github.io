@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: brianstanley.me
+Token: 992545b38a69b7c34edd143754512ada660f5fcca36b5f065a4461dcac9c75db
